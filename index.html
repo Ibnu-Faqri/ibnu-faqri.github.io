@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <header>
         <div class="logo">
+            <img src="img/kiww.gif" alt="">
             <span>I</span>BNU FAQRI
         </div>
         <ul class="navlist">
@@ -20,7 +21,20 @@
             <li><a href="#pendidikan">Pendidikan</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        
     </header>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+    </script>
 
     <!--home page-->
 
@@ -173,7 +187,7 @@
     <section class="pendidikan" id="pendidikan">
         <div class="title">
             <h2>Pendi<span>dikan</span></h2>
-            <div class="animasi-text">
+            <div class="animasi-text" id="animasi-text">
                 <h3>SD Negeri 050743</h3>
                 <h3>SMP Negeri 1 Babalan</h3>
                 <h3>SMA Negeri 1 Babalan</h3>
@@ -185,7 +199,7 @@
     <!--contact page-->
 
     <section class="contact-me" id="contact">
-        <div class="contact-text">
+        <div class="title">
             <h2>Contact <span>Me</span></h2>
             <div class="contact-info">
                 <div class="contact-box">
