@@ -372,25 +372,25 @@ section {
 }
 
 .javascript {
-    width: 70%;
+    width: 80%;
     background-color: var(--hover-color);
     color: var(--bg-color);
 }
 
 .react {
-    width: 55%;
-    background-color: var(--hover-color);
-    color: var(--bg-color);
-}
-
-.php {
     width: 75%;
     background-color: var(--hover-color);
     color: var(--bg-color);
 }
 
-.python {
-    width: 50%;
+.php {
+    width: 70%;
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+}
+
+.express {
+    width: 85%;
     background-color: var(--hover-color);
     color: var(--bg-color);
 }
@@ -581,6 +581,15 @@ section {
     }
     .navlist.open {
         top: 100%;
+    }
+    .liquid-shape {
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        z-index: -1;
+        top: 25%;
+        right: -100%;
+        margin-bottom: 20px;
     }
 }
 
